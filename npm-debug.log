@@ -1,0 +1,157 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose node symlink /usr/bin/node
+5 warn package.json client@0.0.0 No description
+6 warn package.json client@0.0.0 No repository field.
+7 warn package.json client@0.0.0 No README data
+8 verbose readDependencies using package.json deps
+9 verbose install where, deps [ '/home/hanzel/sele/client',
+9 verbose install   [ 'grunt',
+9 verbose install     'grunt-contrib-copy',
+9 verbose install     'grunt-contrib-concat',
+9 verbose install     'grunt-contrib-coffee',
+9 verbose install     'grunt-contrib-jst',
+9 verbose install     'grunt-contrib-uglify',
+9 verbose install     'grunt-contrib-jshint',
+9 verbose install     'grunt-contrib-cssmin',
+9 verbose install     'grunt-contrib-connect',
+9 verbose install     'grunt-contrib-clean',
+9 verbose install     'grunt-contrib-htmlmin',
+9 verbose install     'grunt-contrib-imagemin',
+9 verbose install     'grunt-contrib-watch',
+9 verbose install     'grunt-mocha',
+9 verbose install     'grunt-bower-requirejs',
+9 verbose install     'grunt-usemin',
+9 verbose install     'grunt-rev',
+9 verbose install     'grunt-open',
+9 verbose install     'load-grunt-tasks',
+9 verbose install     'connect-livereload',
+9 verbose install     'time-grunt',
+9 verbose install     'jshint-stylish' ] ]
+10 info preinstall client@0.0.0
+11 verbose readDependencies using package.json deps
+12 verbose already installed skipping grunt-contrib-concat@~0.3.0 /home/hanzel/sele/client
+13 verbose already installed skipping grunt@~0.4.1 /home/hanzel/sele/client
+14 verbose already installed skipping grunt-contrib-copy@~0.4.0 /home/hanzel/sele/client
+15 verbose already installed skipping grunt-contrib-coffee@~0.7.0 /home/hanzel/sele/client
+16 verbose already installed skipping grunt-contrib-jst@~0.5.0 /home/hanzel/sele/client
+17 verbose already installed skipping grunt-contrib-uglify@~0.2.0 /home/hanzel/sele/client
+18 verbose already installed skipping grunt-contrib-jshint@~0.6.3 /home/hanzel/sele/client
+19 verbose already installed skipping grunt-contrib-cssmin@~0.6.0 /home/hanzel/sele/client
+20 verbose already installed skipping grunt-contrib-connect@~0.3.0 /home/hanzel/sele/client
+21 verbose already installed skipping grunt-contrib-clean@~0.5.0 /home/hanzel/sele/client
+22 verbose already installed skipping grunt-contrib-htmlmin@~0.1.3 /home/hanzel/sele/client
+23 verbose already installed skipping grunt-contrib-imagemin@~0.2.0 /home/hanzel/sele/client
+24 verbose already installed skipping grunt-contrib-watch@~0.5.2 /home/hanzel/sele/client
+25 verbose already installed skipping grunt-bower-requirejs@~0.7.0 /home/hanzel/sele/client
+26 verbose already installed skipping grunt-mocha@~0.4.1 /home/hanzel/sele/client
+27 verbose already installed skipping grunt-usemin@~0.1.10 /home/hanzel/sele/client
+28 verbose already installed skipping grunt-rev@~0.1.0 /home/hanzel/sele/client
+29 verbose already installed skipping grunt-open@~0.2.0 /home/hanzel/sele/client
+30 verbose already installed skipping load-grunt-tasks@~0.1.0 /home/hanzel/sele/client
+31 verbose already installed skipping time-grunt@~0.1.1 /home/hanzel/sele/client
+32 verbose already installed skipping connect-livereload@~0.2.0 /home/hanzel/sele/client
+33 verbose already installed skipping jshint-stylish@~0.1.3 /home/hanzel/sele/client
+34 silly resolved []
+35 info build /home/hanzel/sele/client
+36 verbose linkStuff [ false, false, false, '/home/hanzel/sele' ]
+37 info linkStuff client@0.0.0
+38 verbose linkBins client@0.0.0
+39 verbose linkMans client@0.0.0
+40 verbose rebuildBundles client@0.0.0
+41 verbose rebuildBundles [ '.bin',
+41 verbose rebuildBundles   'bower',
+41 verbose rebuildBundles   'connect-livereload',
+41 verbose rebuildBundles   'grunt',
+41 verbose rebuildBundles   'grunt-bower-requirejs',
+41 verbose rebuildBundles   'grunt-contrib-clean',
+41 verbose rebuildBundles   'grunt-contrib-coffee',
+41 verbose rebuildBundles   'grunt-contrib-concat',
+41 verbose rebuildBundles   'grunt-contrib-connect',
+41 verbose rebuildBundles   'grunt-contrib-copy',
+41 verbose rebuildBundles   'grunt-contrib-cssmin',
+41 verbose rebuildBundles   'grunt-contrib-htmlmin',
+41 verbose rebuildBundles   'grunt-contrib-imagemin',
+41 verbose rebuildBundles   'grunt-contrib-jshint',
+41 verbose rebuildBundles   'grunt-contrib-jst',
+41 verbose rebuildBundles   'grunt-contrib-uglify',
+41 verbose rebuildBundles   'grunt-contrib-watch',
+41 verbose rebuildBundles   'grunt-mocha',
+41 verbose rebuildBundles   'grunt-open',
+41 verbose rebuildBundles   'grunt-rev',
+41 verbose rebuildBundles   'grunt-usemin',
+41 verbose rebuildBundles   'jshint-stylish',
+41 verbose rebuildBundles   'load-grunt-tasks',
+41 verbose rebuildBundles   'time-grunt' ]
+42 verbose rebuild bundle /home/hanzel/sele/client/node_modules/bower
+43 info build /home/hanzel/sele/client/node_modules/bower
+44 info preinstall bower@1.3.12
+45 verbose linkStuff [ false, false, false, '/home/hanzel/sele/client/node_modules' ]
+46 info linkStuff bower@1.3.12
+47 warn prefer global bower@1.3.12 should be installed with -g
+48 verbose linkBins bower@1.3.12
+49 verbose link bins [ { bower: 'bin/bower' },
+49 verbose link bins   '/home/hanzel/sele/client/node_modules/.bin',
+49 verbose link bins   false ]
+50 verbose linkMans bower@1.3.12
+51 verbose rebuildBundles bower@1.3.12
+52 verbose rebuildBundles [ '.bin',
+52 verbose rebuildBundles   'abbrev',
+52 verbose rebuildBundles   'archy',
+52 verbose rebuildBundles   'bower-config',
+52 verbose rebuildBundles   'bower-endpoint-parser',
+52 verbose rebuildBundles   'bower-json',
+52 verbose rebuildBundles   'bower-logger',
+52 verbose rebuildBundles   'bower-registry-client',
+52 verbose rebuildBundles   'cardinal',
+52 verbose rebuildBundles   'chalk',
+52 verbose rebuildBundles   'chmodr',
+52 verbose rebuildBundles   'decompress-zip',
+52 verbose rebuildBundles   'fstream',
+52 verbose rebuildBundles   'fstream-ignore',
+52 verbose rebuildBundles   'glob',
+52 verbose rebuildBundles   'graceful-fs',
+52 verbose rebuildBundles   'handlebars',
+52 verbose rebuildBundles   'inquirer',
+52 verbose rebuildBundles   'insight',
+52 verbose rebuildBundles   'is-root',
+52 verbose rebuildBundles   'junk',
+52 verbose rebuildBundles   'lockfile',
+52 verbose rebuildBundles   'lru-cache',
+52 verbose rebuildBundles   'mkdirp',
+52 verbose rebuildBundles   'mout',
+52 verbose rebuildBundles   'nopt',
+52 verbose rebuildBundles   'opn',
+52 verbose rebuildBundles   'osenv',
+52 verbose rebuildBundles   'p-throttler',
+52 verbose rebuildBundles   'promptly',
+52 verbose rebuildBundles   'q',
+52 verbose rebuildBundles   'request',
+52 verbose rebuildBundles   'request-progress',
+52 verbose rebuildBundles   'retry',
+52 verbose rebuildBundles   'rimraf',
+52 verbose rebuildBundles   'semver',
+52 verbose rebuildBundles   'shell-quote',
+52 verbose rebuildBundles   'stringify-object',
+52 verbose rebuildBundles   'tar-fs',
+52 verbose rebuildBundles   'tmp',
+52 verbose rebuildBundles   'update-notifier',
+52 verbose rebuildBundles   'which' ]
+53 error Error: EACCES, unlink '/home/hanzel/sele/client/node_modules/.bin/bower'
+53 error  { [Error: EACCES, unlink '/home/hanzel/sele/client/node_modules/.bin/bower']
+53 error   errno: 3,
+53 error   code: 'EACCES',
+53 error   path: '/home/hanzel/sele/client/node_modules/.bin/bower' }
+54 error Please try running this command again as root/Administrator.
+55 error System Linux 3.13.0-30-generic
+56 error command "/usr/bin/node" "/usr/bin/npm" "install"
+57 error cwd /home/hanzel/sele/client
+58 error node -v v0.10.29
+59 error npm -v 1.4.14
+60 error path /home/hanzel/sele/client/node_modules/.bin/bower
+61 error code EACCES
+62 error errno 3
+63 error stack Error: EACCES, unlink '/home/hanzel/sele/client/node_modules/.bin/bower'
+64 verbose exit [ 3, true ]
