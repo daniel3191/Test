@@ -25,6 +25,9 @@ window.client = {
     View: {},
     Router: {},
     el: document.getElementById('page'),
+    init: function(){
+
+    },
 
     /**
      * qs stands for query string

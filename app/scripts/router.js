@@ -1,4 +1,3 @@
-
 client.Router =  client.Router || {};
 
 (function() {
@@ -12,6 +11,8 @@ client.Router =  client.Router || {};
     /**
      * Backbone Router
      */
+     
+
     client.Router = Backbone.Router.extend({
         routes: {
             '': 'home',
@@ -37,10 +38,16 @@ client.Router =  client.Router || {};
     });
 
     router.on('route:task', function() {
-        if (typeof client.Views.TaskView.render === "undefined") {
-           client.Views.TaskView = new client.Views.TaskView();
+        /*if (typeof client.Views.TaskCollectionView.render === "undefined") {
+                client.Views.TaskCollectionView = new client.Views.TaskCollectionView(directory);
         }
-        return client.Views.TaskView.render();
+        return client.Views.TaskCollectionView.render();*/
+        
+        if (typeof client.Views.TaskCollectionView.render === "undefined") {
+            client.Views.TaskCollectionView = new client.Views.TaskCollectionView();
+            return client.Views.TaskCollectionView.render();
+        }
+       
     });
 
     Backbone.history.start();

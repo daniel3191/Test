@@ -6,16 +6,27 @@ client.Views = client.Views || {};
     'use strict';
 
     client.Views.HomeView = Backbone.View.extend({
-        template: JST['app/scripts/templates/home.ejs'],
+        el: '#page',
+        template: JST['app/scripts/templates/viewhome.ejs'],
          /**
          * Events managed by this view
          */
-        events: {},
+         
+        events: {
+            'click #taskbutton':'getTaskData',
+        },
+     
          /**
          * Render html
          */
         render: function() {
             return this.$el.html(this.template());
-        }
+        },
+
+        getTaskData: function(){
+            console.log('within getTaskData function');
+            Backbone.history.navigate('task', {trigger: true});
+            return false;
+        }   
     });
 })();
