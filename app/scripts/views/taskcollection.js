@@ -40,15 +40,24 @@ client.Views = client.Views || {};
          * Render html
          */
         render: function(){
-            console.log(this.collection.models);
-            this.$el.html(this.template());
-            this.collection.forEach(this.renderTask, this);
+            var self = this;
+            $(this.el).html(this.template(this.$el.empty()));
+            _.each(this.collection.models, function(data){
+                console.log(this.collection.models);
+                for (var i = 0; i = (this.collection.length)-1; i++){
+                    self.renderTask(data);
+                }
+            }, this);
+            return this;
         },
 
         renderTask: function(data){
 
             var TaskItem = new client.Views.TaskView({model: data});
-            this.$el.append(TaskItem.render(data).el);
+            console.log(TaskItem.el);
+            debugger;
+            $('#appendTo').append(TaskItem.render().el);
+            console.log(TaskItem.el);
         }
         
     });

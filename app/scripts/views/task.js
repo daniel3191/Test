@@ -7,7 +7,7 @@ client.Views = client.Views || {};
 
     client.Views.TaskView = Backbone.View.extend({
         
-        el: '#appendTo',
+        tagName: 'li',
         
         initialize: function(){
             //console.log('in model');
@@ -30,11 +30,10 @@ client.Views = client.Views || {};
          * Render html
          */
         render: function(){
-            console.log('rendering model...');
+            debugger;
             var attributes = this.model.toJSON();
-           // console.log(this.$el);
             console.log(attributes);
-            this.$el.html(this.template(attributes));
+            this.$el.append(this.template(attributes));
             console.log('complete...');
         },
         getDetails : function(){
