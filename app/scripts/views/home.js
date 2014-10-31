@@ -1,13 +1,9 @@
-/*global client, Backbone, JST*/
-
-client.Views = client.Views || {};
-
 (function() {
     'use strict';
 
-    client.Views.HomeView = Backbone.View.extend({
+    client.HomeView = Backbone.View.extend({
         el: '#page',
-        template: JST['app/scripts/templates/viewhome.ejs'],
+        template: JST['app/scripts/templates/viewHome.ejs'],
          /**
          * Events managed by this view
          */
@@ -25,7 +21,7 @@ client.Views = client.Views || {};
 
         getTaskData: function(){
             console.log('within getTaskData function');
-            Backbone.history.navigate('task', {trigger: true});
+            Backbone.history.navigate('tasks', {trigger: true});
             return false;
         }   
     });

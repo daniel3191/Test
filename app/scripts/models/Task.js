@@ -4,7 +4,7 @@
 (function() {
     'use strict';
 
-    client.Models.Task = Backbone.Model.extend({
+    client.Task = Backbone.Model.extend({
     	
     	defaults: {
         	title       : 'none',
@@ -15,7 +15,11 @@
 			status      : 'incomplete',
 			save        : 'no',
 			priority    : 'normal'
-        }
+        },
+
+        url: '/tasks',
+
+        urlROOT: '/tasks'
 
     });
 

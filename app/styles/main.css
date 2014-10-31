@@ -63,7 +63,11 @@ section {
 }
 
 .details {
-	padding: 15px;
+	padding: 0px 15px;
+}
+
+.details small{
+	margin: 20px;
 }
 
 .hidden {

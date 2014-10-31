@@ -1,52 +1,35 @@
-/*global client, Backbone, JST*/
-
-client.Views = client.Views || {};
-
 (function() {
     'use strict';
 
-    client.Views.TaskView = Backbone.View.extend({
-        
-        tagName: 'li',
-        
-        initialize: function(){
-            //console.log('in model');
-            this.model.on('destroy', this.remove, this);
-            this.model.on('change', this.render, this);
+    client.TaskView = Backbone.View.extend({
+
+        el: '#appendTo',
+        template: JST['app/scripts/templates/viewTasks.ejs'],
+
+        initialize: function() {
+            this.model.listenTo(this.model, 'destroy', this.remove);
+            this.model.listenTo(this.model, 'change', this.render);
         },
-        template: JST['app/scripts/templates/viewtasks.ejs'],
-         /**
-         * Events managed by this view
-         Event's List:
-            change, click, dblclick, focus, focusin, focusout,
-            hover, keydown, keypress, load, mousedown, mouseenter,
-            mouseleave, mousemove, mouseout, mouseover, mouseup, 
-            ready, resize, scroll, select, unload
-         */
+
         events: {
             'click .list': 'getDetails'
         },
-         /**
+
+        /**
          * Render html
          */
-        render: function(){
-            debugger;
-            var attributes = this.model.toJSON();
-            console.log(attributes);
-            this.$el.append(this.template(attributes));
-            console.log('complete...');
+        render: function() {
+            return this.$el.append(this.template(this.model.attributes));
         },
-        getDetails : function(){
-            $('.details').toggleClass('.hidden').slideToggle('fast');
+
+        getDetails: function(e) {
+            $(e.target).toggleClass('.hidden');
+            $(e.target).siblings('.details').slideToggle('fast');
         },
-        remove: function(){
+
+        remove: function() {
             this.$el.remove();
+            return new client.TaskIndexView();
         }
-
     });
-
-//////////////////////////////////////////////////////////
-
-    
-
 })();

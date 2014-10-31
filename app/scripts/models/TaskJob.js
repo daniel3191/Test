@@ -4,7 +4,7 @@
 (function() {
     'use strict';
 
-    client.Models.Task = Backbone.Model.extend({
+    client.Task = Backbone.Model.extend({
         defaults: {
         	proyectName  : 'none',
             clientName   : 'none',
